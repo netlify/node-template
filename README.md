@@ -10,6 +10,7 @@ After using this template, the following must be replaced:
 - Rename the GitHub repository and add a description
 - Rename the GitHub `REPO_NAME` in `package.json` and `README.md`
 - Rename the npm package `NAME` in `package.json`, `package-lock.json` and `README.md`
+- Modify this `README.md`'s contents
 
 ## Contributors
 
