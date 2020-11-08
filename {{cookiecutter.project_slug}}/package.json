@@ -1,8 +1,8 @@
 {
-  "name": "@netlify/{{cookiecutter.package_name}}",
+  "name": "@netlify/{{cookiecutter.project_slug}}",
   "private": true,
-  "version": "{{cookiecutter.package_version}}",
-  "description": "{{cookiecutter.package_description}",
+  "version": "{{cookiecutter.project_version}}",
+  "description": "{{cookiecutter.project_description}}",
   "files": [
     "src"
   ],
@@ -36,9 +36,9 @@
   },
   "keywords": [],
   "license": "MIT",
-  "repository": "netlify/{{cookiecutter.repo_name}}",
+  "repository": "netlify/{{cookiecutter.project_slug}}",
   "bugs": {
-    "url": "https://github.com/netlify/{{cookiecutter.repo_name}}/issues"
+    "url": "https://github.com/netlify/{{cookiecutter.project_slug}}/issues"
   },
   "author": "Netlify Inc.",
   "directories": {
