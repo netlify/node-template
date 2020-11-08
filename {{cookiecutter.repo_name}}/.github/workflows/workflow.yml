@@ -35,4 +35,4 @@ jobs:
       - name: Tests
         run: npm run test:ci
       - name: Codecov test coverage
-        run: bash scripts/coverage.sh "${{ matrix.os }}" "${{ matrix.node-version }}"
+        run: npm run test:report:coverage "${{ matrix.os }}" "${{ matrix.node-version }}"
