@@ -7,7 +7,7 @@ Please feel free to use this template when starting a new Node.js repository.
 ## Setup
 
 - `cookiecutter gh:netlify/node-template`
-- Rename the GitHub repository and add a description
+- Create a GitHub repository and push the generated local repo
 
 ## Contributors
 
