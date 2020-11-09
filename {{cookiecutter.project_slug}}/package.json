@@ -46,7 +46,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@netlify/eslint-config-node": "^0.6.0",
+    "@netlify/eslint-config-node": "^0.6.1",
     "ava": "^2.4.0",
     "nyc": "^15.0.0"
   },
