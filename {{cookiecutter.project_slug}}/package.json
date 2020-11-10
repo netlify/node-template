@@ -19,8 +19,7 @@
     "test:dev": "run-s test:dev:*",
     "test:ci": "run-s test:ci:*",
     "test:dev:ava": "ava",
-    "test:ci:ava": "nyc -r lcovonly -r text -r json ava",
-    "test:report:coverage": "report_coverage"
+    "test:ci:ava": "nyc -r lcovonly -r text -r json ava"
   },
   "scriptsArgs": {
     "eslint": "--ignore-path .gitignore --cache --format=codeframe --max-warnings=0 \"{src,scripts,.github}/**/*.{js,md,html}\" \"*.{js,md,html}\" \".*.{js,md,html}\"",
@@ -46,7 +45,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@netlify/eslint-config-node": "^0.6.1",
+    "@netlify/eslint-config-node": "^1.0.0",
     "ava": "^2.4.0",
     "nyc": "^15.0.0"
   },
