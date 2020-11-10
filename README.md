@@ -1,16 +1,13 @@
-[![Build](https://github.com/netlify/REPO_NAME/workflows/Build/badge.svg)](https://github.com/netlify/REPO_NAME/actions)
-[![Node](https://img.shields.io/node/v/@netlify/NAME.svg?logo=node.js)](https://www.npmjs.com/package/@netlify/NAME)
+# node-template
 
-This is a GitHub template for Netlify Node.js repositories.
+This is a GitHub [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html) template for Netlify Node.js repositories.
 
 Please feel free to use this template when starting a new Node.js repository.
 
-After using this template, the following must be replaced:
+## Setup
 
-- Rename the GitHub repository and add a description
-- Rename the GitHub `REPO_NAME` in `package.json` and `README.md`
-- Rename the npm package `NAME` in `package.json`, `package-lock.json` and `README.md`
-- Modify this `README.md`'s contents
+- `cookiecutter gh:netlify/node-template`
+- Create a GitHub repository and push the generated local repo
 
 ## Contributors
 

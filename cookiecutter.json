@@ -1,0 +1,9 @@
+{
+  "project_name": "Node Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "project_description": "A Node Project to fix all bugs",
+  "project_version": "1.0.0",
+  "_copy_without_render": [
+    ".github/workflows/*.yml"
+  ]
+}

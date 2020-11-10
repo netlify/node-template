@@ -4,7 +4,7 @@
 
 These guidelines will help you send a pull request.
 
-Please note that this project is not intended to be used outside our own projects so new features are unlikely to be
+Please note that this project is not intended to be used outside my own projects so new features are unlikely to be
 accepted.
 
 If you're submitting an issue instead, please skip this document.
@@ -17,10 +17,33 @@ This project was made with ❤️. The simplest way to give back is by starring 
 Everyone is welcome regardless of personal background. We enforce a [Code of conduct](CODE_OF_CONDUCT.md) in order to
 promote a positive and inclusive environment.
 
-## Development Process
+# Development process
 
 First fork and clone the repository. If you're not sure how to do this, please watch
 [these videos](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github).
 
-Most changes should be done to the template itself under `{{cookiecutter.project_slug}}`.
-Post template generation hook is under `hooks/post_gen_project.py`
+Run:
+
+```bash
+npm install
+```
+
+Make sure everything is correctly setup with:
+
+```bash
+npm test
+```
+
+After submitting the pull request, please make sure the Continuous Integration checks are passing.
+
+## Releasing
+
+```bash
+npm version [major|minor|patch]
+```
+
+Then:
+
+```
+npm publish [--tag=TAG]
+```
