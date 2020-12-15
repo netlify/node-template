@@ -30,6 +30,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "npm run format"
     }
   },
@@ -45,6 +46,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@netlify/eslint-config-node": "^2.0.0",
     "ava": "^2.4.0",
     "nyc": "^15.0.0"
