@@ -17,6 +17,8 @@
   ],
   includePaths: [
     '{{cookiecutter.project_slug}}/package.json',
-    '{{cookiecutter.project_slug}}/package-lock.json',
   ],
+  lockFileMaintenance: {
+    enabled: false,
+  },
 }
