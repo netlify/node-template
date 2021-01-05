@@ -13,4 +13,4 @@ with fileinput.FileInput(filename, inplace=True) as file:
 subprocess.call(['git', 'init'])
 subprocess.call(['npm', 'install'])
 subprocess.call(['git', 'add', '.'])
-subprocess.call(['git', 'commit', '-m', 'Initial commit'])
+subprocess.call(['git', 'commit', '-m', 'chore: initial commit'])
