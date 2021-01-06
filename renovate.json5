@@ -15,4 +15,10 @@
       },
     },
   ],
+  includePaths: [
+    '{{cookiecutter.project_slug}}/package.json',
+  ],
+  lockFileMaintenance: {
+    enabled: false,
+  },
 }
