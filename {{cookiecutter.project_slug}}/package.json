@@ -4,7 +4,8 @@
   "version": "{{cookiecutter.project_version}}",
   "description": "{{cookiecutter.project_description}}",
   "files": [
-    "src"
+    "src/**/*.js",
+    "!src/**/*.test.js"
   ],
   "scripts": {
     "prepublishOnly": "npm ci && npm test",
