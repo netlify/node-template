@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "A repository template to bootstrap Node.js projects for Netlify",
+  "type": "module",
   "license": "MIT",
   "repository": "netlify/node-template",
   "bugs": {
