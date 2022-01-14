@@ -11,6 +11,7 @@
     "!src/**/*.test.js"
   ],
   "scripts": {
+    "prepare": "husky install node_modules/@netlify/eslint-config-node/.husky/",
     "prepublishOnly": "npm ci && npm test",
     "test": "run-s format test:dev",
     "format": "run-s format:check-fix:*",
@@ -33,12 +34,6 @@
   "ava": {
     "verbose": true
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run format"
-    }
-  },
   "keywords": [],
   "license": "MIT",
   "repository": "netlify/{{cookiecutter.project_slug}}",
@@ -55,7 +50,6 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@netlify/eslint-config-node": "^4.1.3",
     "ava": "^3.0.0",
-    "husky": "^4.3.8",
     "nyc": "^15.0.0"
   },
   "engines": {
