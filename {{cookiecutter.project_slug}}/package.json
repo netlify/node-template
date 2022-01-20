@@ -4,8 +4,8 @@
   "version": "{{cookiecutter.project_version}}",
   "description": "{{cookiecutter.project_description}}",
   "type": "module",
-  "main": "./src/main.js",
-  "exports": "./src/main.js",
+  "main": "./dist/main.js",
+  "exports": "./dist/main.js",
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts"
