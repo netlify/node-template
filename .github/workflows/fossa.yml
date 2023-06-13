@@ -4,27 +4,18 @@ on:
   push:
     branches:
       - main
-      - chore/fossa-workflow
-
-defaults:
-  run:
-    shell: bash
+  pull_request:
+    branches: [main]
+    # Run on PRs with changes to this same file
+    paths: [".github/workflows/fossa.yml"]
 
 jobs:
   fossa:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Download fossa cli
-        run: |-
-          mkdir -p $HOME/.local/bin
-          curl https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash -s -- -b $HOME/.local/bin
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-
-      - name: Fossa init
-        run: fossa init
-      - name: Upload dependencies
-        run: fossa analyze --debug
-        env:
-          FOSSA_API_KEY: ${{ secrets.FOSSA_API_KEY }}
+        uses: actions/checkout@v3
+      - name: Run FOSSA analyze
+        uses: fossas/fossa-action@main
+        with:
+          api-key: ${{ secrets.FOSSA_API_KEY }}

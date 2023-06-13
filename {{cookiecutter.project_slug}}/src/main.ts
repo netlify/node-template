@@ -1,3 +1,1 @@
-const mainFunction = () => true
-
-export { mainFunction }
+export const mainFunction = () => true

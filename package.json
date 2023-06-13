@@ -12,5 +12,8 @@
   "engines": {
     "node": "^14.16.0 || >=16.0.0"
   },
-  "author": "Netlify Inc."
+  "author": "Netlify Inc.",
+  "devDependencies": {
+    "rimraf": "^5.0.1"
+  }
 }
